@@ -1,0 +1,15 @@
+# ============================================================
+# Discord Profile Widget v2 定期同期
+# widget_data.json の内容を一定間隔でDiscord APIにPATCHし続けることで
+# プロフィールウィジェットの "still syncing" 表示を回避する
+# ============================================================
+
+services:
+  discord-widget-reloader:
+    build: .
+    container_name: discord-widget-reloader
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./widget_data.json:/app/widget_data.json:ro
