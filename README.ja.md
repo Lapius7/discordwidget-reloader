@@ -46,7 +46,7 @@ Discord の実験的機能「Profile Widgets v2」でプロフィールに表示
 
 ## 前提条件
 
-このコンテナの範囲外です。事前に Discord 上で完了させておいてください。
+以下の手順は、このコンテナの範囲外です。事前に Discord 上で済ませてください。
 
 1. [Discord Developer Portal](https://discord.com/developers/applications) でアプリケーションを作成し、`Games` → `Social SDK` を有効化する
 2. アプリケーションをチーム所有にする（個人所有のままだと `Games` タブの条件を満たせない場合がある）
